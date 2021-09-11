@@ -5,8 +5,8 @@ import os from 'os'
 import {AbstractCache} from './cache-utils'
 
 const CACHE_PATH = [
-    '~/.gradle/caches/*', // All directories in 'caches'
-    '~/.gradle/notifications/*', // Prevent the re-rendering of first-use message for version
+    '~/.gradle/caches', // All directories in 'caches'
+    '~/.gradle/notifications', // Prevent the re-rendering of first-use message for version
     '~/.gradle/wrapper/dists/*/*/*.zip' // Only wrapper zips are required : Gradle will expand these on demand
 ]
 
